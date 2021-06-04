@@ -142,9 +142,9 @@
 	phy-handle = <&phy0>;
 
 	mdio0 {
+		compatible = "snps,dwmac-mdio";
 		#address-cells = <1>;
 		#size-cells = <0>;
-		compatible = "ti,dp83867";
 		phy0: ethernet-phy@0 {
 			reg = <0>;
 		};
