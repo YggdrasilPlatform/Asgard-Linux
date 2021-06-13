@@ -62,7 +62,7 @@
 	panel@0 {
 		compatible = "orisetech,otm8009a";
 		reg = <0>;
-		reset-gpios = <&gpioc 7 GPIO_ACTIVE_LOW>;
+		reset-gpios = <&gpioe 4 GPIO_ACTIVE_LOW>;
 		power-supply = <&v3v3>;
 		status = "okay";
 
@@ -87,22 +87,6 @@
 	};
 };
 
-&spi4 {
-    	pinctrl-names = "default", "sleep";
-    	pinctrl-0 = <&spi4_pins_a>;
-    	pinctrl-1 = <&spi4_sleep_pins_b>;
-    	status = "okay";
-    	cs-gpios = <&gpioe 11 0>;
-     
-    	spidev@0{
-    		compatible = "spidev";
-    		reg = <0>;
-    		spi-max-frequency = <4000000>;
-    		#address-cells = <1>;
-    		#size-cells = <0>;
-    	};
-    };
-    
 &ltdc {
 	status = "okay";
 

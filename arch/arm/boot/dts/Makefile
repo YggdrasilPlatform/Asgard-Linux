@@ -836,7 +836,6 @@ dtb-$(CONFIG_ARCH_OMAP4) += \
 	omap4-duovero-parlor.dtb \
 	omap4-kc1.dtb \
 	omap4-panda.dtb \
-	omap4-panda-es-b3.dtb \
 	omap4-panda-a4.dtb \
 	omap4-panda-es.dtb \
 	omap4-sdp.dtb \
@@ -1079,7 +1078,8 @@ dtb-$(CONFIG_ARCH_STM32) += \
 	stm32mp157c-ed1.dtb \
 	stm32mp157c-ev1.dtb \
 	stm32mp157c-lxa-mc1.dtb \
-	stm32mp157c-odyssey.dtb
+	stm32mp157c-odyssey.dtb \
+	stm32mp157c-asgard.dtb
 dtb-$(CONFIG_MACH_SUN4I) += \
 	sun4i-a10-a1000.dtb \
 	sun4i-a10-ba10-tvbox.dtb \
