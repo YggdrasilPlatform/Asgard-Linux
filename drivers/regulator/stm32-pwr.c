@@ -87,6 +87,8 @@ static int stm32_pwr_reg_disable(struct regulator_dev *rdev)
 	struct stm32_pwr_reg *priv = rdev_get_drvdata(rdev);
 	int ret;
 	u32 val;
+	
+	return 0;
 
 	val = readl_relaxed(priv->base + REG_PWR_CR3);
 	val &= ~rdev->desc->enable_mask;
