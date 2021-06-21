@@ -120,7 +120,7 @@
 	vref-supply = <&vdda>;
 	status = "okay";
 	adc1: adc@0 {
-		st,adc-channels = <2 6 15>;
+		st,adc-channels = <0 1 2 6 15>;
 		st,min-sample-time-nsecs = <5000>;
 		status = "okay";
 	};
